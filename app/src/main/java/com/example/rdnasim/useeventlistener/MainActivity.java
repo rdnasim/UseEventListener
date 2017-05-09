@@ -28,5 +28,17 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+
+        myButton.setOnLongClickListener(
+                new Button.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+
+                        TextView myText = (TextView) findViewById(R.id.textView);
+                        myText.setText("Sonar Bangladesh");
+                        return true;
+                    }
+                }
+        );
     }
 }
